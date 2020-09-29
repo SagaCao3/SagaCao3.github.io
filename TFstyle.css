@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+article img{
+    width: 300px;
+    margin-bottom: 20px;
+    rotate: 15deg;
+}
+article a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightslategray;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+article a:hover{
+    background-color: dimgrey;
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color: lightslategray;
+    }
+    article img{
+        width: 100%;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
